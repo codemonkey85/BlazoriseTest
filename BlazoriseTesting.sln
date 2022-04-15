@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1700.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazoriseTesting", "BlazoriseTesting\BlazoriseTesting.csproj", "{22631B58-0C06-44A7-97F3-1B5D7D330A7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazoriseTesting", "BlazoriseTesting\BlazoriseTesting.csproj", "{22631B58-0C06-44A7-97F3-1B5D7D330A7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5DE7A76E-2320-4FF9-97A3-DFFFBF42926E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
