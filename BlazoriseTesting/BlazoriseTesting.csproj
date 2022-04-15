@@ -23,7 +23,4 @@
     <None Remove="Blazorise.Icons.FontAwesome" />
     <None Remove="Components\" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Components\" />
-  </ItemGroup>
 </Project>

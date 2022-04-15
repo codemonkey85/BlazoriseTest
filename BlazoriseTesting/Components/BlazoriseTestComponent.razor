@@ -7,3 +7,6 @@
         <Button Color="Color.Primary">Button</Button>
     </CardBody>
 </Card>
+
+<ColorPicker @bind-Color=@MyColor />
+<Button Clicked="@(()=>OnThemeColorChanged(MyColor ?? "#000000"))">Change theme</Button>
