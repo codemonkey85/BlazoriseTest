@@ -22,5 +22,11 @@
     <None Remove="Blazorise.Bootstrap" />
     <None Remove="Blazorise.Icons.FontAwesome" />
     <None Remove="Components\" />
+    <None Remove="Services\" />
+    <None Remove="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Models\" />
   </ItemGroup>
 </Project>

@@ -5,3 +5,6 @@ global using BlazoriseTesting;
 global using Microsoft.AspNetCore.Components;
 global using Microsoft.AspNetCore.Components.Web;
 global using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+global using BlazoriseTesting.Services;
+global using BlazoriseTesting.Models;
+global using System.Net.Http.Json;

@@ -10,3 +10,17 @@
 
 <ColorPicker @bind-Color=@MyColor />
 <Button Clicked="@(()=>OnThemeColorChanged(MyColor ?? "#000000"))">Change theme</Button>
+
+@if (todos.Any())
+{
+    @foreach (var todo in todos)
+    {
+        <Card>
+            <CardBody>
+                <CardTitle>
+                    <Check @bind-Checked="@todo.Completed" /> @todo.Title
+                </CardTitle>
+            </CardBody>
+        </Card>
+    }
+}

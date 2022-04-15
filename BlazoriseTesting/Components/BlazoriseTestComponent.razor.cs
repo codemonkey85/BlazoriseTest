@@ -1,8 +1,13 @@
-namespace BlazoriseTesting.Components;
+﻿namespace BlazoriseTesting.Components;
 
 public partial class BlazoriseTestComponent
 {
+    [CascadingParameter]
+    private Theme Theme { get; set; }
+
     private string? MyColor { get; set; }
+
+    private Todo[] todos = Array.Empty<Todo>();
 
     private Task OnThemeColorChanged(string value)
     {
@@ -20,6 +25,6 @@ public partial class BlazoriseTestComponent
         return Task.CompletedTask;
     }
 
-    [CascadingParameter]
-    private Theme Theme { get; set; }
+    protected override async Task OnInitializedAsync() =>
+        todos = (await TodoService.GetTodosAsync())?.Take(10)?.ToArray() ?? Array.Empty<Todo>();
 }
